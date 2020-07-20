@@ -1,0 +1,63 @@
+.work,
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 1rem;
+}
+
+.work__title,
+.project-thumbnail {
+	margin-bottom: 2rem;
+}
+
+.work h3 {
+	margin-bottom: 5px;
+}
+
+.work__title img {
+	height: 100px;
+}
+
+.project-thumbnail {
+	width: 90%;
+}
+
+.project-thumbnail img {
+	width: 100%;
+	margin: 0 auto;
+	height: 170px;
+}
+
+.profile-image {
+	border-bottom: 2px solid gray;
+}
+
+.profile-text {
+	margin-top: 25px;
+}
+
+.profile-text p {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+
+.profile-image img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	margin-bottom: 50px;
+}
+
+.main-footer {
+	background-color: black;
+	color: white;
+}
+
+.tagline {
+	text-align: center;
+}
