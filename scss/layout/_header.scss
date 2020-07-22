@@ -11,6 +11,8 @@
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
+	animation: fadeIn 1.5s ease-in .2s;
+	animation-fill-mode: both;
 	img {
 		width: 100%;
 		max-width: 770px;
@@ -21,32 +23,26 @@
 .header-text {
 	display: flex;
 	flex-direction: column;
-	width: 90%;
-	// margin-top: -70px;
-	letter-spacing: .1rem;
+	letter-spacing: .15rem;
 	font-size: 1.25rem;
 	position: relative;
 	bottom: 5rem;
+	animation: fadeInUp .75s ease-in 2.2s;
+	animation-fill-mode: both;
 	p {
 		justify-content: center;
 		align-self: center;
 	}
-	img {
-		width: 100%;
-		max-width: 770px;
-		margin: 0 auto;
+	.field {
+		font-size: 2.5rem;
+		text-align: center;
 	}
-}
 
-.field {
-	font-size: 1.5rem;
-	text-align: center;
-}
-
-.social-link:link,
-.social-link:visited {
-	text-decoration: none;
-	color: black;
+	.social-link:link,
+	.social-link:visited {
+		text-decoration: none;
+		color: black;
+	}
 }
 
 .chevron {
@@ -56,4 +52,6 @@
 	height: 10vh;
 	padding-top: .5rem;
 	color: #229ff8;
+	animation: fadeInUp .75s ease-in 2.2s;
+	animation-fill-mode: both;
 }

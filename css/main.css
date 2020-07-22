@@ -1,3 +1,21 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -22,6 +40,8 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  animation: fadeIn 1.5s ease-in 0.2s;
+  animation-fill-mode: both;
 }
 .title img {
   width: 100%;
@@ -32,29 +52,23 @@ body {
 .header-text {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
   font-size: 1.25rem;
   position: relative;
   bottom: 5rem;
+  animation: fadeInUp 0.75s ease-in 2.2s;
+  animation-fill-mode: both;
 }
 .header-text p {
   justify-content: center;
   align-self: center;
 }
-.header-text img {
-  width: 100%;
-  max-width: 770px;
-  margin: 0 auto;
-}
-
-.field {
-  font-size: 1.5rem;
+.header-text .field {
+  font-size: 2.5rem;
   text-align: center;
 }
-
-.social-link:link,
-.social-link:visited {
+.header-text .social-link:link,
+.header-text .social-link:visited {
   text-decoration: none;
   color: black;
 }
@@ -66,6 +80,8 @@ body {
   height: 10vh;
   padding-top: 0.5rem;
   color: #229ff8;
+  animation: fadeInUp 0.75s ease-in 2.2s;
+  animation-fill-mode: both;
 }
 
 .btn {
