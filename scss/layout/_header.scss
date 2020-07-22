@@ -9,31 +9,33 @@
 .title {
 	width: 90%;
 	margin: 0 auto;
-}
-
-.title img {
-	width: 100%;
-	margin: auto;
-	height: auto;
+	display: flex;
+	justify-content: center;
+	img {
+		width: 100%;
+		max-width: 770px;
+		margin: 0 auto;
+	}
 }
 
 .header-text {
 	display: flex;
 	flex-direction: column;
 	width: 90%;
-	margin-top: -70px;
+	// margin-top: -70px;
 	letter-spacing: .1rem;
-	font-size: 1rem;
-}
-
-.header-text .icons {
-	justify-content: center;
-	align-items: center;
-}
-
-.header-text h3 {
-	justify-content: center;
-	align-self: center;
+	font-size: 1.25rem;
+	position: relative;
+	bottom: 5rem;
+	p {
+		justify-content: center;
+		align-self: center;
+	}
+	img {
+		width: 100%;
+		max-width: 770px;
+		margin: 0 auto;
+	}
 }
 
 .field {

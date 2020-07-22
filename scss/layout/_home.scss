@@ -9,27 +9,21 @@
 	font-size: 1rem;
 }
 
-.work__title,
-.project-thumbnail {
-	margin-bottom: 2rem;
-}
-
 .work h3 {
 	margin-bottom: 5px;
 }
 
 .work__title img {
-	height: 100px;
+	height: 150px;
 }
 
 .project-thumbnail {
 	width: 90%;
-}
-
-.project-thumbnail img {
-	width: 100%;
-	margin: 0 auto;
-	height: 170px;
+	img {
+		width: 100%;
+		margin: 0 auto;
+		height: auto;
+	}
 }
 
 .profile-image {
@@ -43,21 +37,24 @@
 .profile-text p {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 25px;
 }
 
 .profile-image img {
 	height: 200px;
 	width: 200px;
 	border-radius: 50%;
-	margin-bottom: 50px;
 }
 
 .main-footer {
 	background-color: black;
 	color: white;
+	height: 10vh;
 }
 
 .tagline {
 	text-align: center;
+}
+
+footer .field {
+	padding-top: 1rem;
 }
