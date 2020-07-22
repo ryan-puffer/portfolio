@@ -8,17 +8,57 @@
 
 	.work {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 		width: 90%;
-		margin: 0 auto;
 		font-size: 1rem;
+		& > div:nth-child(odd) {
+			margin-right: 4rem;
+		}
+		margin-bottom: 6rem;
+	}
+
+	.contact__block {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		.profile-image {
+			width: 35%;
+			border: none;
+			img {
+				width: 400px;
+				height: 400px;
+				border: 5px solid #229ff8;
+			}
+		}
+		.profile-text {
+			width: 50%;
+			font-size: 1.5rem;
+			position: relative;
+			.btn {
+				padding: 1rem 3rem;
+				font-size: 1.5rem;
+				position: absolute;
+				left: 50%;
+				bottom: 6rem;
+				transform: translateX(-50%);
+			}
+		}
+	}
+
+	.work__title {
+		text-align: center;
+		img {
+			height: 300px;
+		}
 	}
 
 	.project-thumbnail {
-		width: 45%;
+		width: 40%;
+		margin-bottom: 3rem;
 		img {
 			width: 100%;
 			margin: 0 auto;

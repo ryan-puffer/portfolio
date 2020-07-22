@@ -7,14 +7,9 @@
 	width: 90%;
 	margin: 0 auto;
 	font-size: 1rem;
-}
-
-.work h3 {
-	margin-bottom: 5px;
-}
-
-.work__title img {
-	height: 150px;
+	h3 {
+		margin-bottom: 5px;
+	}
 }
 
 .project-thumbnail {
@@ -28,33 +23,28 @@
 
 .profile-image {
 	border-bottom: 2px solid gray;
+	img {
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+	}
 }
 
 .profile-text {
 	margin-top: 25px;
-}
-
-.profile-text p {
-	display: flex;
-	flex-direction: column;
-}
-
-.profile-image img {
-	height: 200px;
-	width: 200px;
-	border-radius: 50%;
+	p {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .main-footer {
-	background-color: black;
-	color: white;
-	height: 10vh;
-}
-
-.tagline {
-	text-align: center;
-}
-
-footer .field {
-	padding-top: 1rem;
+	color: black;
+	.field {
+		padding-top: 1rem;
+	}
+	.tagline {
+		text-align: center;
+		font-size: 1rem;
+	}
 }
