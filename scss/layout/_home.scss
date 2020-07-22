@@ -4,7 +4,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	font-size: 1rem;
 	h3 {
@@ -12,13 +12,34 @@
 	}
 }
 
+.work {
+	background-color: #eee;
+	padding: 3rem;
+}
+
 .project-thumbnail {
-	width: 90%;
+	width: 100%;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: 0 1rem 2rem rgba(black, .15);
 	img {
 		width: 100%;
 		margin: 0 auto;
 		height: auto;
 	}
+}
+
+.icons-card {
+	@include clearfix;
+	.field-card {
+		float: left;
+	}
+}
+
+.buttons {
+	text-align: right;
+	float: right;
 }
 
 .profile-image {

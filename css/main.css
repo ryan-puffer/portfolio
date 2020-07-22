@@ -81,13 +81,22 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 }
 
+.card-button {
+  text-decoration: none;
+  color: white;
+  background-color: #229ff8;
+  padding: 2px 5px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
 .work,
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   font-size: 1rem;
 }
@@ -96,13 +105,36 @@ body {
   margin-bottom: 5px;
 }
 
+.work {
+  background-color: #eee;
+  padding: 3rem;
+}
+
 .project-thumbnail {
-  width: 90%;
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 .project-thumbnail img {
   width: 100%;
   margin: 0 auto;
   height: auto;
+}
+
+.icons-card::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.icons-card .field-card {
+  float: left;
+}
+
+.buttons {
+  text-align: right;
+  float: right;
 }
 
 .profile-image {
