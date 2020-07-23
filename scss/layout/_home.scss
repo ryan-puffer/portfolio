@@ -17,12 +17,22 @@
 	padding: 3rem;
 }
 
+.work__title {
+	text-align: center;
+	img {
+		height: 300px;
+	}
+}
+
 .project-thumbnail {
 	width: 100%;
 	background-color: white;
 	padding: 1rem;
 	border-radius: 5px;
 	box-shadow: 0 1rem 2rem rgba(black, .15);
+	&:not(:last-child) {
+		margin-bottom: 2rem;
+	}
 	img {
 		width: 100%;
 		margin: 0 auto;
@@ -63,9 +73,11 @@
 	color: black;
 	.field {
 		padding-top: 1rem;
+		text-align: center;
 	}
 	.tagline {
 		text-align: center;
 		font-size: 1rem;
+		padding-bottom: 1rem;
 	}
 }
