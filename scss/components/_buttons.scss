@@ -1,6 +1,7 @@
 .btn {
 	text-transform: uppercase;
 	text-decoration: none;
+	width: 40%;
 	padding: .75rem 2rem;
 	border-radius: 10rem;
 	border: none;
@@ -10,8 +11,12 @@
 	box-shadow: 0 .5rem 1rem rgba(black, .25);
 	transition: all .3s;
 	&:hover {
-		transform: scale(1.5);
+		transform: scale(1.05) translateY(-3px);
 		box-shadow: 0 1rem 1.5rem rgba(black, .35);
+	}
+	&:focus {
+		outline: 0;
+		background-color: darken(#229ff8, 10%);
 	}
 }
 

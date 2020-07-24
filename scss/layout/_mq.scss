@@ -34,18 +34,35 @@
 			}
 		}
 		.profile-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
 			width: 50%;
 			font-size: 1.5rem;
+			text-align: left;
 			position: relative;
 			.btn {
 				padding: 1rem 3rem;
 				font-size: 1.5rem;
-				position: absolute;
-				left: 50%;
-				bottom: 6rem;
-				transform: translateX(-50%);
+				margin: 0 auto;
+				transition: all .3s;
+				&:hover {
+					transform: scale(1.05) translateY(-3px);
+					box-shadow: 0 1rem 1.5rem rgba(black, .35);
+				}
+				&:focus {
+					outline: 0;
+					background-color: darken(#229ff8, 10%);
+				}
+				&:active {
+					transform: translateY(2px);
+				}
 			}
 		}
+	}
+
+	.buttons {
+		font-size: 1rem;
 	}
 
 	.work__title {

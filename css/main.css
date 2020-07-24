@@ -97,6 +97,7 @@ body {
 .btn {
   text-transform: uppercase;
   text-decoration: none;
+  width: 40%;
   padding: 0.75rem 2rem;
   border-radius: 10rem;
   border: none;
@@ -107,8 +108,12 @@ body {
   transition: all 0.3s;
 }
 .btn:hover {
-  transform: scale(1.5);
+  transform: scale(1.05) translateY(-3px);
   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.35);
+}
+.btn:focus {
+  outline: 0;
+  background-color: #0786e0;
 }
 
 .card-button {
@@ -148,11 +153,12 @@ body {
   text-align: center;
 }
 .work__title img {
-  height: 300px;
+  height: 200px;
 }
 
 .project-thumbnail {
   width: 100%;
+  max-width: 600px;
   background-color: white;
   padding: 1rem;
   border-radius: 5px;
@@ -179,10 +185,22 @@ body {
 .buttons {
   text-align: right;
   float: right;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.contact__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__block .profile-text {
+  text-align: center;
 }
 
 .profile-image {
   border-bottom: 2px solid gray;
+  padding-bottom: 2rem;
 }
 .profile-image img {
   height: 200px;
@@ -190,9 +208,6 @@ body {
   border-radius: 50%;
 }
 
-.profile-text {
-  margin-top: 25px;
-}
 .profile-text p {
   display: flex;
   flex-direction: column;
@@ -279,17 +294,34 @@ body {
     border: 5px solid #229ff8;
   }
   .contact__block .profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 50%;
     font-size: 1.5rem;
+    text-align: left;
     position: relative;
   }
   .contact__block .profile-text .btn {
     padding: 1rem 3rem;
     font-size: 1.5rem;
-    position: absolute;
-    left: 50%;
-    bottom: 6rem;
-    transform: translateX(-50%);
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .contact__block .profile-text .btn:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.35);
+  }
+  .contact__block .profile-text .btn:focus {
+    outline: 0;
+    background-color: #0786e0;
+  }
+  .contact__block .profile-text .btn:active {
+    transform: translateY(2px);
+  }
+
+  .buttons {
+    font-size: 1rem;
   }
 
   .work__title {
