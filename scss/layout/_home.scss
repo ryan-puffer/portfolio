@@ -59,6 +59,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	max-width: 1300px;
 	.profile-text {
 		text-align: center;
 	}
@@ -66,7 +67,6 @@
 
 .profile-image {
 	border-bottom: 2px solid gray;
-	padding-bottom: 2rem;
 	img {
 		height: 200px;
 		width: 200px;
@@ -75,6 +75,7 @@
 }
 
 .profile-text {
+	padding: 2rem;
 	p {
 		display: flex;
 		flex-direction: column;
