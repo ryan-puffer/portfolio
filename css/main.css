@@ -337,6 +337,7 @@ body {
   .project-thumbnail {
     width: 40%;
     margin-bottom: 2rem;
+    height: 350px;
   }
   .project-thumbnail img {
     width: 100%;
