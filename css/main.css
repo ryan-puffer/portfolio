@@ -155,9 +155,11 @@ body {
 
 .work__title {
   text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
 }
 .work__title img {
-  height: 200px;
+  height: 125px;
 }
 
 .project-thumbnail {
@@ -290,7 +292,7 @@ body {
     font-size: 1rem;
     margin-bottom: 6rem;
   }
-  .work > div:nth-child(odd) {
+  .work > div:nth-child(even):not(:first-child) {
     margin-right: 4rem;
   }
 
@@ -342,9 +344,10 @@ body {
 
   .work__title {
     text-align: center;
+    width: 100%;
   }
   .work__title img {
-    height: 300px;
+    height: 175px;
   }
 
   .project-thumbnail {
