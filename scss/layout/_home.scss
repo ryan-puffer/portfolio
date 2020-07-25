@@ -15,6 +15,7 @@
 .work {
 	background-color: #eee;
 	padding: 3rem;
+	align-items: stretch;
 }
 
 .work__title {
@@ -71,6 +72,7 @@
 		height: 200px;
 		width: 200px;
 		border-radius: 50%;
+		object-fit: cover;
 	}
 }
 
@@ -87,6 +89,10 @@
 	.field {
 		padding-top: 1rem;
 		text-align: center;
+		.social-link-footer {
+			padding: 0 3px;
+			cursor: pointer;
+		}
 	}
 	.tagline {
 		text-align: center;
