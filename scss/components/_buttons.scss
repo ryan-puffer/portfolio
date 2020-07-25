@@ -7,7 +7,7 @@
 	border-radius: 10rem;
 	border: none;
 	font-size: 1rem;
-	background-color: #229ff8;
+	background-color: $color-primary;
 	color: white;
 	box-shadow: 0 .5rem 1rem rgba(black, .25);
 	transition: all .3s;
@@ -17,20 +17,20 @@
 	}
 	&:focus {
 		outline: 0;
-		background-color: darken(#229ff8, 10%);
+		background-color: darken($color-primary, 10%);
 	}
 }
 
 .card-button {
 	text-decoration: none;
 	color: white;
-	background-color: #229ff8;
+	background-color: $color-primary;
 	padding: 2px 5px;
 	cursor: pointer;
 	text-transform: uppercase;
 	border-radius: 3px;
 	transition: all .3s;
 	&:hover {
-		background-color: darken(#229ff8, 10%);
+		background-color: darken($color-primary, 10%);
 	}
 }

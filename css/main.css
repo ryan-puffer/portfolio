@@ -42,10 +42,11 @@ body {
   justify-content: center;
   animation: fadeIn 1.5s ease-in 0.2s;
   animation-fill-mode: both;
+  margin-bottom: 1rem;
 }
 .title img {
   width: 100%;
-  max-width: 770px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -53,9 +54,8 @@ body {
   display: flex;
   flex-direction: column;
   letter-spacing: 0.15rem;
-  font-size: 1.25rem;
-  position: relative;
-  bottom: 5rem;
+  font-size: 2rem;
+  font-weight: 200;
   animation: fadeInUp 1s ease-out 2.2s;
   animation-fill-mode: both;
 }
@@ -64,7 +64,7 @@ body {
   align-self: center;
 }
 .header-text .field {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 .header-text .social-link {
@@ -270,6 +270,10 @@ body {
 }
 
 @media (min-width: 768px) {
+  .title img {
+    max-width: 500px;
+  }
+
   .header-text {
     bottom: 10rem;
   }
