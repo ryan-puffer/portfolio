@@ -197,6 +197,10 @@ body {
   margin-top: 2px;
 }
 
+.subtitle {
+  font-size: 0.75rem;
+}
+
 .contact__block {
   display: flex;
   flex-direction: column;
