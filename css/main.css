@@ -46,7 +46,6 @@ body {
 }
 .title img {
   width: 100%;
-  height: auto;
   max-width: 400px;
   margin: 0 auto;
 }
@@ -253,6 +252,10 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 2rem;
+}
+
+.u-margin-bottom-xs {
+  margin-bottom: 0.5rem;
 }
 
 .u-margin-top-large {
