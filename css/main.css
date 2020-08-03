@@ -48,6 +48,7 @@ body {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .header-text {
