@@ -41,7 +41,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid red;
   animation: fadeIn 1.5s ease-in 0.2s;
   animation-fill-mode: both;
   margin-bottom: 1rem;
