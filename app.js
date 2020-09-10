@@ -28,13 +28,13 @@ const projectDetails = [
 			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?'
 	},
 	{
-		name    : 'PacMan - Desktop Edition',
-		img     : 'images/pacman1.png',
+		name    : 'Employee Directory - API Project',
+		img     : 'images/employeedirectory.png',
 		tech    : '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js"></i>',
-		site    : 'https://pacman-js-game.netlify.app/',
-		code    : 'https://github.com/ryan-puffer/pacman-js',
+		site    : 'https://treehouse-employee-directory.netlify.app/',
+		code    : 'https://github.com/ryan-puffer/employee-directory',
 		details :
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?'
+			"This was a great project to exercise getting data from a public API and using that data to generate random employees's contact information. Building the modal was another fun way to stretch my JavaScript skills."
 	},
 	{
 		name    : 'YelpCamp',
@@ -44,7 +44,7 @@ const projectDetails = [
 		site    : 'https://yelpcamp-puffer.herokuapp.com/',
 		code    : 'https://github.com/ryan-puffer/yelp_camp/tree/master/YelpCampDeployed',
 		details :
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?'
+			'The goal of YelpCamp was to create a full stack application with user authentication that allowed people to post, review, and comment on campsites. I built upon the original design by Colt Steele to add location functionality with the Google Maps API. Bootstrap was used for the layout and some base styles.  '
 	}
 ];
 
