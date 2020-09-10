@@ -12,9 +12,10 @@
 	}
 }
 
-.work {
+.work,
+.work-header {
 	background-color: $bg-color-light-grey;
-	padding: 3rem;
+	padding: 4rem .5rem 2rem .5rem;
 	align-items: stretch;
 }
 

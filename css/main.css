@@ -149,9 +149,10 @@ body {
   margin-bottom: 5px;
 }
 
-.work {
+.work,
+.work-header {
   background-color: #eee;
-  padding: 3rem;
+  padding: 4rem 0.5rem 2rem 0.5rem;
   align-items: stretch;
 }
 
@@ -300,7 +301,7 @@ body {
     font-size: 1rem;
     margin-bottom: 6rem;
   }
-  .work > div:nth-child(even):not(:first-child) {
+  .work > div:nth-child(odd) {
     margin-right: 4rem;
   }
 
