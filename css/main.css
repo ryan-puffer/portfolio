@@ -170,6 +170,7 @@ body {
   max-width: 600px;
   background-color: white;
   padding: 1rem;
+  cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
@@ -280,6 +281,60 @@ body {
   font-size: 2rem;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+  height: 100vh;
+}
+
+.modal {
+  width: 325px;
+  font-size: 0.75rem;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+.modal img {
+  width: 100%;
+}
+.modal-title {
+  margin-bottom: 2rem;
+}
+.modal i {
+  font-size: 1rem;
+  margin: 5px 5px;
+}
+.modal p {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+.modal div.modal-buttons {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .title img {
     max-width: 500px;
@@ -368,40 +423,13 @@ body {
     margin: 0 auto;
     height: auto;
   }
-}
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(100, 100, 100, 0.4);
-  height: 100vh;
-}
 
-.modal {
-  width: 375px;
-  margin: 15% auto auto;
-  position: relative;
-  text-align: center;
-  background: #fff;
-  border: 1px solid #778;
-  border-radius: 5px;
-  padding: 30px 20px;
-}
-
-.modal-close {
-  position: absolute;
-  right: 15px;
-  top: 5px;
-  cursor: pointer;
-  border: none;
-  background-color: #fff;
-  font-weight: 600;
-}
-
-.hidden {
-  display: none;
+  .modal {
+    width: 525px;
+  }
+  .modal i {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

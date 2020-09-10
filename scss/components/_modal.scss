@@ -9,7 +9,8 @@
 }
 
 .modal {
-	width: 375px;
+	width: 325px;
+	font-size: .75rem;
 	margin: 15% auto auto;
 	position: relative;
 	text-align: center;
@@ -17,6 +18,24 @@
 	border: 1px solid #778;
 	border-radius: 5px;
 	padding: 30px 20px;
+	img {
+		width: 100%;
+	}
+	&-title {
+		margin-bottom: 2rem;
+	}
+	i {
+		font-size: 1rem;
+		margin: 5px 5px;
+	}
+	p {
+		font-size: 1rem;
+		margin: 2rem 0;
+	}
+	div.modal-buttons {
+		text-align: center;
+		font-size: 1.25rem;
+	}
 }
 
 .modal-close {

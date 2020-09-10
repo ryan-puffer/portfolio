@@ -9,7 +9,7 @@ let modalIndex;
 const projectDetails = [
 	{
 		name    : 'Wheel of Success',
-		img     : 'images/thumbnails/wheelofsuccess1thumbnail.png',
+		img     : 'images/wheelofsuccess1.png',
 		tech    :
 			'<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-sass"></i><i class="fab fa-js"></i>',
 		site    : 'https://wheelofsuccessproject.netlify.app',
@@ -29,7 +29,7 @@ const projectDetails = [
 	},
 	{
 		name    : 'PacMan - Desktop Edition',
-		img     : 'images/thumbnails/pacman1thumbnail.png',
+		img     : 'images/pacman1.png',
 		tech    : '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js"></i>',
 		site    : 'https://pacman-js-game.netlify.app/',
 		code    : 'https://github.com/ryan-puffer/pacman-js',
@@ -38,7 +38,7 @@ const projectDetails = [
 	},
 	{
 		name    : 'YelpCamp',
-		img     : 'images/thumbnails/yelpcamp1thumbnail.png',
+		img     : 'images/yelpcamp1.png',
 		tech    :
 			'<i class="fab fa-html5"></i><i class="fab fa-css3-alt"><i class="fab fa-node-js"></i></i><i class="fab fa-js"></i>',
 		site    : 'https://yelpcamp-puffer.herokuapp.com/',
@@ -79,30 +79,33 @@ function displayProjects() {
         `;
 	});
 	work.innerHTML = projectHTML;
+	//loop through each card and apply listener to each card
+	const cards = document.querySelectorAll('.project-thumbnail');
+	cards.forEach((card, index) => {
+		card.addEventListener('click', (e) => {
+			overlay.classList.remove('hidden');
+			displayModal(index);
+			console.log(index);
+		});
+	});
 }
 
 //function that executes when a card is clicked on
 function displayModal(index) {
-	// //get innerHTML of selected card
-	// const modalHTML = `
-	// <h1>${name}</h1>
-	// <img class="modal-thumbnail" src="${projectDetails[0].img}" />
-	// <div class="technology">${projectDetails[0].tech}</div>
-	// <p class="modal-desc">${projectDetails[0].details}</p>
-	// <div class="buttons">
-	//     <a href="${projectDetails[0].site}" class="card-button">Visit Site</a>
-	//     <a href="${projectDetails[0].code}" class="card-button">View Code</a>
-	// </div>
-	// `;
-	// //set modalHTML to that card
-	// modalContent.innerHTML = modalHTML;
+	//get innerHTML of selected card
+	const modalHTML = `
+        <h1 class="modal-title">${projectDetails[index].name}</h1>
+        <img class="modal-thumbnail" src="${projectDetails[index].img}" />
+        <div class="technology">${projectDetails[index].tech}</div>
+        <p class="modal-desc">${projectDetails[index].details}</p>
+        <div class="modal-buttons">
+            <a href="${projectDetails[index].site}" class="card-button">Visit Site</a>
+            <a href="${projectDetails[index].code}" class="card-button">View Code</a>
+        </div>
+        `;
+	//set modalHTML to that card
+	modalContent.innerHTML = modalHTML;
 }
-
-work.addEventListener('click', (e) => {
-	const card = e.target;
-	overlay.classList.remove('hidden');
-	displayModal(card);
-});
 
 //close modal
 modalClose.addEventListener('click', () => {
