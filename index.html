@@ -30,11 +30,12 @@
     
     <main>
         
-        <section class="work u-margin-bottom-medium">
+        <section class="work-header u-margin-bottom-medium">
             <div class="work__title">
                 <img src="images/work-image.png" alt="work">
             </div>
-            <div class="project-thumbnail">
+            <div class="work"></div>
+            <!-- <div class="project-thumbnail">
                 <h3>Wheel of Success Game</h3>
                 <a href="https://wheelofsuccessproject.netlify.app"><img src="images/wheelofsuccess1.png" alt="Wheel of Success"></a>
                 <div class="icons-card">
@@ -103,7 +104,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
          
         </section>
         
@@ -113,12 +114,12 @@
             </div>
             <div class="contact__block">
                 <div class="profile-image">
-                    <img src="images/headshot1.jpg" alt="Ryan Puffer">
+                    <img src="images/headshot-blue.jpg" alt="Ryan Puffer">
                 </div>
 
                 <div class="profile-text">
-                    <p class="u-margin-bottom-xs">Hi, I'm Ryan!</p>
-                      <p class="u-margin-bottom-xs"> I like to build cool things with Javascript. I was a teacher for ten years, so learning is kind of my jam.  If I’m not working on a project, you can find me reading a book to learn a new language, surfing blogs while looking for better ways to code something, or chatting with people on Twitter. Right now, I’m learning React to try to make building front-ends of applications easier!</p>
+                    <p class="u-margin-bottom-small">Hi, I'm Ryan!</p>
+                      <p class="u-margin-bottom-small"> I like to build cool things with Javascript. I was a teacher for ten years, so learning is kind of my jam.  If I’m not working on a project, you can find me reading a book to learn a new language, surfing blogs while looking for better ways to code something, or chatting with people on Twitter. Right now, I’m learning React to try to make building front-ends of applications easier!</p>
 
                         <p class="u-margin-bottom-small">Outside of programming, I love spending time with my wife and son, playing golf with friends, or gaming with my brother.  </p>
                     <a href="mailto:ryanpufferdev@gmail.com"><button class="btn">Let's chat!</button></a> 
@@ -126,6 +127,17 @@
             </div>
         </section>
     </main>
+    <!-- MODAL -->
+    <div class="overlay hidden">
+        <div class="modal">
+            <button class="modal-close">X</button>
+            <div class="modal-content">
+                <!-- Modal info will go here -->
+            </div>
+            <ion-icon name="chevron-forward-outline" class="arrow right"></ion-icon>
+            <ion-icon name="chevron-back-outline" class="arrow left"></ion-icon>
+        </div>
+    </div>
     <footer class="main-footer">
         <div class="icons">
             <p class="field">
@@ -136,5 +148,6 @@
         </div>
         <p class="tagline">Made with love by me</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
