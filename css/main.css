@@ -100,6 +100,7 @@ body {
 .btn {
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   width: 50%;
   padding: 0.75rem 2rem;
   cursor: pointer;
@@ -118,10 +119,6 @@ body {
 .btn:focus {
   outline: 0;
   background-color: #0786e0;
-}
-.btn a {
-  text-decoration: none;
-  color: white;
 }
 
 .card-button {

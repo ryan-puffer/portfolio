@@ -1,6 +1,7 @@
 .btn {
 	text-transform: uppercase;
 	text-decoration: none;
+	text-align: center;
 	width: 50%;
 	padding: .75rem 2rem;
 	cursor: pointer;
@@ -18,10 +19,6 @@
 	&:focus {
 		outline: 0;
 		background-color: darken($color-primary, 10%);
-	}
-	a {
-		text-decoration: none;
-		color: white;
 	}
 }
 
