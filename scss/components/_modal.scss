@@ -1,0 +1,53 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(100, 100, 100, .4);
+	height: 100vh;
+}
+
+.modal {
+	width: 325px;
+	font-size: .75rem;
+	margin: 15% auto auto;
+	position: relative;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #778;
+	border-radius: 5px;
+	padding: 30px 20px;
+	img {
+		width: 100%;
+	}
+	&-title {
+		margin-bottom: 2rem;
+	}
+	i {
+		font-size: 1rem;
+		margin: 5px 5px;
+	}
+	p {
+		font-size: 1rem;
+		margin: 2rem 0;
+	}
+	div.modal-buttons {
+		text-align: center;
+		font-size: 1.25rem;
+	}
+}
+
+.modal-close {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	cursor: pointer;
+	border: none;
+	background-color: #fff;
+	font-weight: 600;
+}
+
+.hidden {
+	display: none;
+}
