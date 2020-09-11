@@ -9,7 +9,7 @@ let modalIndex;
 const projectDetails = [
 	{
 		name    : 'Wheel of Success',
-		img     : 'images/wheelofsuccess1.png',
+		img     : 'images/wheelofsuccess2.png',
 		tech    :
 			'<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-sass"></i><i class="fab fa-js"></i>',
 		site    : 'https://wheelofsuccessproject.netlify.app',
@@ -19,7 +19,7 @@ const projectDetails = [
 	},
 	{
 		name    : 'YourApp Dashboard',
-		img     : 'images/thumbnails/WebAppDashboardthumbnail.png',
+		img     : 'images/webappdashboard2.png',
 		tech    :
 			'<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-sass"></i><i class="fab fa-js"></i>',
 		site    : 'https://yourappdashboard.netlify.app/',
@@ -29,7 +29,7 @@ const projectDetails = [
 	},
 	{
 		name    : 'Employee Directory - API Project',
-		img     : 'images/employeedirectory.png',
+		img     : 'images/employeedirectory2.png',
 		tech    : '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js"></i>',
 		site    : 'https://treehouse-employee-directory.netlify.app/',
 		code    : 'https://github.com/ryan-puffer/employee-directory',
@@ -38,7 +38,7 @@ const projectDetails = [
 	},
 	{
 		name    : 'YelpCamp',
-		img     : 'images/yelpcamp1.png',
+		img     : 'images/yelpcamp2.png',
 		tech    :
 			'<i class="fab fa-html5"></i><i class="fab fa-css3-alt"><i class="fab fa-node-js"></i></i><i class="fab fa-js"></i>',
 		site    : 'https://yelpcamp-puffer.herokuapp.com/',
@@ -70,8 +70,8 @@ function displayProjects() {
                 ${tech}
             </p>
             <div class="buttons">
-                <a href="${site}" class="card-button">Visit Site</a>
-                <a href="${code}" class="card-button">View Code</a>
+                <a href="${site}" class="card-button" target="_blank">Visit Site</a>
+                <a href="${code}" class="card-button" target="_blank">View Code</a>
             </div>
 
         </div>
@@ -83,9 +83,10 @@ function displayProjects() {
 	const cards = document.querySelectorAll('.project-thumbnail');
 	cards.forEach((card, index) => {
 		card.addEventListener('click', (e) => {
-			overlay.classList.remove('hidden');
-			displayModal(index);
-			console.log(index);
+			if (!e.target.classList.contains('card-button')) {
+				overlay.classList.remove('hidden');
+				displayModal(index);
+			}
 		});
 	});
 }
