@@ -1,17 +1,15 @@
-const projects = document.querySelectorAll('.project-thumbnail');
 const work = document.querySelector('.work');
 const overlay = document.querySelector('.overlay');
 const modalContainer = document.querySelector('.modal');
 const modalContent = document.querySelector('.modal-content');
 const modalClose = document.querySelector('.modal-close');
-let modalIndex;
 
 const projectDetails = [
 	{
 		name    : 'Wheel of Success',
 		img     : 'images/wheelofsuccess2.png',
 		tech    :
-			'<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-sass"></i><i class="fab fa-js"></i>',
+			'<i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i> <i class="fab fa-js"></i>',
 		site    : 'https://wheelofsuccessproject.netlify.app',
 		code    : 'https://github.com/ryan-puffer/tdu6-wheel-of-success',
 		details :
@@ -21,7 +19,7 @@ const projectDetails = [
 		name    : 'YourApp Dashboard',
 		img     : 'images/webappdashboard2.png',
 		tech    :
-			'<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-sass"></i><i class="fab fa-js"></i>',
+			'<i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i> <i class="fab fa-js"></i>',
 		site    : 'https://yourappdashboard.netlify.app/',
 		code    : 'https://github.com/ryan-puffer/tdu7-web-app-dashboard',
 		details :
@@ -30,7 +28,7 @@ const projectDetails = [
 	{
 		name    : 'Employee Directory - API Project',
 		img     : 'images/employeedirectory2.png',
-		tech    : '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js"></i>',
+		tech    : '<i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i>',
 		site    : 'https://treehouse-employee-directory.netlify.app/',
 		code    : 'https://github.com/ryan-puffer/employee-directory',
 		details :
@@ -40,7 +38,7 @@ const projectDetails = [
 		name    : 'YelpCamp',
 		img     : 'images/yelpcamp2.png',
 		tech    :
-			'<i class="fab fa-html5"></i><i class="fab fa-css3-alt"><i class="fab fa-node-js"></i></i><i class="fab fa-js"></i>',
+			'<i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-node-js"></i> <i class="fab fa-js"></i>',
 		site    : 'https://yelpcamp-puffer.herokuapp.com/',
 		code    : 'https://github.com/ryan-puffer/yelp_camp/tree/master/YelpCampDeployed',
 		details :
