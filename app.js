@@ -6,14 +6,14 @@ const modalClose = document.querySelector('.modal-close');
 
 const projectDetails = [
 	{
-		name    : 'Wheel of Success',
-		img     : 'images/wheelofsuccess2.png',
+		name    : 'Wheel of Anchorman',
+		img     : 'images/anchorman.png',
 		tech    :
 			'<i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i> <i class="fab fa-js"></i>',
 		site    : 'https://wheelofsuccessproject.netlify.app',
 		code    : 'https://github.com/ryan-puffer/tdu6-wheel-of-success',
 		details :
-			'The Wheel of Success was a fun opportunity to practice using JavaScript to generate a random phrase from an array and insert it into my HTML. I used a click listener with a checkLetter() function to see if the letter clicked was in the generated phrase. I had some fun with it by making it an Anchorman quote guessing game. '
+			'The Wheel of Anchorman was a fun opportunity to practice using JavaScript to generate a random phrase from an array and insert it into my HTML. I used a click listener with a checkLetter() function to see if the letter clicked was in the generated phrase. I had some fun with it by making it an Anchorman quote guessing game. '
 	},
 	{
 		name    : 'YourApp Dashboard',
