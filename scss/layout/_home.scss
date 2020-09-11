@@ -12,9 +12,10 @@
 	}
 }
 
-.work {
+.work,
+.work-header {
 	background-color: $bg-color-light-grey;
-	padding: 3rem;
+	padding: 4rem .5rem 2rem .5rem;
 	align-items: stretch;
 }
 
@@ -32,6 +33,7 @@
 	max-width: 600px;
 	background-color: white;
 	padding: 1rem;
+	cursor: pointer;
 	border-radius: 5px;
 	box-shadow: 0 1rem 2rem rgba(black, .15);
 	&:not(:last-child) {

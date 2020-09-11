@@ -17,7 +17,7 @@
 		align-items: center;
 		justify-content: center;
 		font-size: 1rem;
-		& > div:nth-child(even):not(:first-child) {
+		& > div:nth-child(odd) {
 			margin-right: 4rem;
 		}
 		margin-bottom: 6rem;
@@ -84,6 +84,14 @@
 			width: 100%;
 			margin: 0 auto;
 			height: auto;
+		}
+	}
+
+	.modal {
+		width: 525px;
+
+		i {
+			font-size: 1.5rem;
 		}
 	}
 }
