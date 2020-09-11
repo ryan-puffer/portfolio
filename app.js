@@ -98,8 +98,8 @@ function displayModal(index) {
         <div class="technology">${projectDetails[index].tech}</div>
         <p class="modal-desc">${projectDetails[index].details}</p>
         <div class="modal-buttons">
-            <a href="${projectDetails[index].site}" class="card-button">Visit Site</a>
-            <a href="${projectDetails[index].code}" class="card-button">View Code</a>
+            <a href="${projectDetails[index].site}" class="card-button" target="_blank">Visit Site</a>
+            <a href="${projectDetails[index].code}" class="card-button" target="_blank">View Code</a>
         </div>
         `;
 	//set modalHTML to that card
