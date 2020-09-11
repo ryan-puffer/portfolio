@@ -15,7 +15,7 @@ const projectDetails = [
 		site    : 'https://wheelofsuccessproject.netlify.app',
 		code    : 'https://github.com/ryan-puffer/tdu6-wheel-of-success',
 		details :
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?'
+			'The Wheel of Success was a fun opportunity to practice using JavaScript to generate a random phrase from an array and insert it into my HTML. I used a click listener with a checkLetter() function to see if the letter clicked was in the generated phrase. I had some fun with it by making it an Anchorman quote guessing game. '
 	},
 	{
 		name    : 'YourApp Dashboard',
@@ -25,7 +25,7 @@ const projectDetails = [
 		site    : 'https://yourappdashboard.netlify.app/',
 		code    : 'https://github.com/ryan-puffer/tdu7-web-app-dashboard',
 		details :
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?'
+			'This was surpisingly one of the more difficult projects I built so far. Getting the layout to look proper in a mobile and desktop view was trickier than I originally thought it would be. I used CSS Grid to layout the dashboard. (I love Grid!) Then I used Flexbox to layout each individual widget. Incorporating ChartJS for the interactive charts was a lot of fun and made me excited to find other uses for it in the future.'
 	},
 	{
 		name    : 'Employee Directory - API Project',
